@@ -2,11 +2,11 @@
 layout: page
 title: About
 permalink: /about/
-feature-img: "assets/img/sample_feature_img_2.png"
+feature-img: "assets/img/bookshelf_april_2018.png"
 ---
 
-Type Theme is a free and open-source theme for [Jekyll](http://jekyllrb.com/), licensed under the MIT License.
+I'm Andy. Come fall, I'll be a grad student at NYU Gallatin, studying political behavior and data science. Before grad school, I was a field and data campaign staffer up and down the ballot in Minnesota.
 
-Head over to the [theme's documentation](https://rohanchandra.github.io/project/type/) for much more information about Type Theme or to install this theme on your own Jekyll site.
+My aim with this blog is to accessibly describe some of the political campaign applications of Machine Learning and Natural Language Processing. I'm also hoping to include some expository writing on statistical concepts I wish I'd had access to in my undergraduate career.
 
-This file is an example of a page in Jekyll, that automatically shows up in the header navigation, you can delete or modify this file freely.
+{% include subscription-form.html %}
