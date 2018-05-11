@@ -3,17 +3,12 @@ layout: post
 title: Why the normal distribution?
 tags: [probability, information theory, expository]
 ---
-
-<!--excerpt.start-->
-<br><br>
-
 {:refdef: style="text-align: center;"}
 ![The normal distribution is boring]({{ site.baseimg }}/assets/img/boring_normal.jpg)
 {: refdef}
-
 When I was first studying probability theory as an undergrad, I had a bit of a conceptual hang-up with the Central Limit Theorem. [Simulating it in R](http://www.rpubs.com/christopher_castle/137490) gave a nice visual of how each additional random variable smoothed out some of the original distribution's individuality, and asymptotically we were left with a more generic shape. The proofs were relatively straightforward. One part, however, didn't really make sense to me. My problem was this: **Of all the many possible distributions, why is the normal distribution in particular that our i.i.d random variables converge to in distribution?**
 
-<!--excerpt.end-->
+<!--more-->
 
 The normal distribution has lots of interesting properties that I looked at to gain some intuition, but many of the them seem to follow from the CLT, rather than explaining it. In fact, it wasn't until a later course in machine learning that integrated some [information theory](https://en.wikipedia.org/wiki/Information_theory) that I found a satisfactory answer to my question.
 
