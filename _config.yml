@@ -13,7 +13,7 @@ theme_settings:
 
   # Header and footer text
   header_text: >
-     <p>A blog about statistics, machine learning, and NLP for political campaigns</p>
+     <p>Statistics, Machine Learning, and NLP for political campaigns</p>
 
   header_text_feature_image:
   footer_text: >

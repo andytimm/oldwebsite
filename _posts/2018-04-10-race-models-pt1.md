@@ -50,7 +50,7 @@ Use and Evaluation
 -------
 Now that we have a probability distribution over the racial groups, how do we utilize them?
 
-We might take the highest probability race and use that as our prediction. Alternatively, as an input in a later model, we might choose to simply incorporate all 5 probabilities, allowing our following model as much information as possible about the racial identity of a voter. Catalist, a democratic data vendor, turns probabilities into simple categories such as "likely white" or "possibly black", which simplify working with the results on a campaign.
+We might take the highest probability race and use that as our prediction. Alternatively, as an input in a later model, we might choose to simply incorporate all 5 probabilities, allowing our following model as much information as possible about the racial identity of a voter. Catalist, the democratic data vendor, turns probabilities into simple categories such as "likely white" or "possibly black", which simplify working with the results on a campaign.
 
 As a final idea, we might have an application in mind where you want to only predict a certain race when you're very confident in your prediction. For example, you might be hoping to target a turnout mailer written in Spanish to only Hispanics, and as few non-Hispanics as possible. To do this, we'd utilize only high probability predictions- say, above 85% likely to be Hispanic. By changing that threshold, you could optimize the size of your  mail universe versus the specificity and efficiency of it, finding the best balance for your campaign.
 
