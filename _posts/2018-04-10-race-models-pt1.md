@@ -10,6 +10,8 @@ Race is a defining part of political identity in the United States, and so it sh
 
  In this post, I'll explore a Bayes' rule based method for modeling racial identity, and how it can be extended with additional information from state voter files where available. In the next posts, I'll explain how natural language processing models can achieve still higher accuracy by extracting more information from names themselves. Since the Florida voter file has self-reported race data and is [easy to access](http://flvoters.com/downloads.html), we'll test our models' effectiveness against that ground truth.
 
+ <!--more-->
+
 A simple first method
 -----
 The [census surname files](https://www.census.gov/data/developers/data-sets/surnames.html) are a an incredible source of information on how race correlates with names, and are the starting point of our model. In these files, the census provides race percentage breakdowns for any surname with more than 100 occurrences in the United States, except where redacted for privacy reasons. The data is available only aggregated at the national level. In practice, this means coverage of about 90% of the population.
