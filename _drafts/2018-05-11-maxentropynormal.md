@@ -7,10 +7,6 @@ When I was first studying probability theory as an undergrad, I had a bit of a c
 
 <!--more-->
 
-{:refdef: style="text-align: center;"}
-![The normal distribution is boring]({{ site.baseimg }}/assets/img/boring_normal.jpg)
-{: refdef}
-
 The normal distribution has lots of interesting properties that I looked at to gain some intuition, but many of the them seem to follow from the CLT, rather than explaining it. In fact, it wasn't until a later course in machine learning that integrated some [information theory](https://en.wikipedia.org/wiki/Information_theory) that I found a satisfactory answer to my question.
 
 In this post, I'll explain an insight from the principle of maximum entropy that conceptually justifies the normal distribution's role in the CLT. To do so, we'll first build up a basic introduction to entropy, how probability and entropy interact, and then explain the entropy property of the normal distribution that helped me understand the question above. For this post, all you'll really need is a rough idea of what a random variable is, and some familiarity with common probability distributions; we'll build up the rest from scratch.

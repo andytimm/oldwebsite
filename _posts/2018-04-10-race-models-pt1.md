@@ -91,7 +91,11 @@ Looking at these, there are a lot of interesting patterns!
 
 **Hispanic:** The Hispanic models are all very close together: with surname information being so effective in classifying Hispanics (more effective than any model for the other races), there isn't much room for census or voter file data to improve things.
 
-**Asian:** These models are significantly weaker than all the others, but still reasonable. The unexpected trend though, is that the kitchen sink model preforms much worse than the other two. Here's my best shot at an explanation: Something not visible from the graphs is that all of these models have quite a high number of false negatives. In other words, all models struggle to correctly identify Asian voters, with none of our available data (for now) being sufficient to get high accuracy.
+**Asian:** These models are significantly weaker than all the others, but still reasonable. The unexpected trend though, is that the kitchen sink model preforms much worse than the other two. Given how few Asian voters there are
+overall in Florida, this downturn is probably explained by the relatively low density of any Asians across the other
+inputs, like age, sex, or party. Thus, while geographic information might slightly improve things, Floridians are so
+unlikely to be Asian overall that all of those extra variables don't carry any useful information about who might be
+Asian.
 
 Overall, these Bayes' Theorem models have a lot of attractive features. While the predictiveness of names, and what variables you have from the voter file might vary state to state, the models can used anywhere in the US. They're also quite a strong baseline for accuracy as well- far, far better than random, even for Asian voters. Unlike models we'll discuss in the next post, these models require no training data. Finally, they're transparent- if you want to check how surname, geolocation, and party weighed in to a particular decision, it's only a few calculations with Bayes' rule away.
 
