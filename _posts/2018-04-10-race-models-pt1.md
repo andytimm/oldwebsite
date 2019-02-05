@@ -10,7 +10,7 @@ Race is a defining part of political identity in the United States, and so it sh
 
  In this post, I'll explore a Bayes' rule based method for modeling racial identity, and how it can be extended with additional information from state voter files where available. In the next posts, I'll explain how natural language processing models can achieve still higher accuracy by extracting more information from names themselves. Since the Florida voter file has self-reported race data and is [easy to access](http://flvoters.com/downloads.html), we'll test our models' effectiveness against that ground truth.
 
- <!--more-->
+<!--more-->
 
 A simple first method
 -----
