@@ -23,7 +23,7 @@ magnitude of your effect might be overestimated, or **type M**
 error. Together, these additional statistics more fully explain the dangers of
 working in the NHST framework, especially in noisy, small sample environments.
 
-**retrodesign** is a package designed to help researchers better understand type S
+**retrodesign()** is a package designed to help researchers better understand type S
 and M errors and their implications for their research. In this vignette, I
 introduce both the need for the type S/M error metrics, and the tools
 retrodesign provides for examining them. I assume only a basic familiarity with
@@ -67,7 +67,7 @@ significant; we'll come back to this fact several times.
 
 To visualize these, we'll draw 5000 samples from a normal distribution with
 mean .5, and standard deviation 1. We'll then analyze these in a NHST setting
-where we have a standard error of 1. We can use `sim_plot()` to do so, with the first
+where we have a standard error of 1. We can use ``sim_plot()`` to do so, with the first
 parameter being our postulated effect size .5, and the second being our
 hypothetical standard error of 1. If you prefer to not use ggplot graphics like I do
 here, set the `gg` argument to FALSE.
