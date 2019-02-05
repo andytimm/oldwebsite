@@ -74,9 +74,9 @@ here, set the `gg` argument to FALSE.
 
 
 
-``` R
+~~~ r
 sim_plot(.5,1)
-```
+~~~
 
 ![Visual of what type S and M errors are]({{ site.baseurl }}/assets/img/Intro_To_retrodesign_files/figure-html/unnamed-chunk-2-1.png)<!-- -->
 
