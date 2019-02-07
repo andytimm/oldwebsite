@@ -4,9 +4,13 @@ title: Type S/M errors in R with retrodesign()
 tags: [R, R studio, hypothesis testing]
 ---
 
+This is a online version of the vignette for my r package **retrodesign()**. It'll be on CRAN soon, but in the meantime,
+you can install with devtools using:
 
-
-
+``` r
+library(devtools)
+install_github("andytimm/retrodesign")
+```
 
 In light of the replication and reproducibility crisis, researchers across
 many fields have been reexamining their relationship with the Null Hypothesis
@@ -18,8 +22,7 @@ Andrew Gelman, John Carlin, Francis Tuerlinckx, and others which develop two new
  errors are insufficient to fully capture the risks of NHST analyses, in that
  such analysis focuses excessively on statistical significance. Instead,
  they argue for consideration of the probability you'll get the sign on your
- effect wrong, or **type S error**, and the factor by which the
-magnitude of your effect might be overestimated, or **type M**
+ effect wrong, or **type S error**, and the factor by which your effect might be overestimated, or **type M**
 error. Together, these additional statistics more fully explain the dangers of
 working in the NHST framework, especially in noisy, small sample environments.
 
@@ -34,7 +37,8 @@ hypothesis testing, and provide definitional reminders along the way.
 ## An Initial Example
 
 To nail down the assumptions we're working with, we'll start with an abstract
-example; the second will draw on a real world scenario and follow
+example from [Lu et al.](https://onlinelibrary.wiley.com/doi/full/10.1111/bmsp.12132)
+(2018); the second will draw on a real world scenario and follow
 Gelman and Carlin's suggested workflow for design analysis more closely.
 
 Let's say we're testing whether a true effect size is zero or not, in a two
@@ -67,7 +71,7 @@ significant; we'll come back to this fact several times.
 
 To visualize these, we'll draw 5000 samples from a normal distribution with
 mean .5, and standard deviation 1. We'll then analyze these in a NHST setting
-where we have a standard error of 1. We can use ``sim_plot()`` to do so, with the first
+where we have a standard error of 1. We can use `sim_plot()` to do so, with the first
 parameter being our postulated effect size .5, and the second being our
 hypothetical standard error of 1. If you prefer to not use ggplot graphics like I do
 here, set the `gg` argument to FALSE.
@@ -140,7 +144,7 @@ a p-value of .015, so significant at the traditional $\alpha = .05$.
 
 Stepping back for a second, this is fishy in numerous ways. First, comparing
 the first borne children is an oddly specific comparison to have run- at worst,
-this might be a case of p-hacking. At best, maybe they saw a strong comparison,
+this might be a case of p-hacking. Or maybe they saw a strong comparison,
 and decided to test it, and in doing so fell into a [Garden of Forking Paths](http://www.stat.columbia.edu/~gelman/research/unpublished/p_hacking.pdf)
 problem. Second, if attractive people had many more girls, it seems unlikely
 that gender balance would be as even as it is. So again, this example has a
@@ -214,10 +218,6 @@ Another concern might be that my first two examples were severely underpowered.
 However, even with powers that are publishable in many fields, we should still
 be worried about type M errors, but not type S errors.
 
-As [Lu et al.](https://onlinelibrary.wiley.com/doi/full/10.1111/bmsp.12132)
-(2018) note, the type S and M error shrink at very different rates as power
-rises.
-
 To sketch out the relationship between possible effect sizes and these errors,
 we adopt the standard error from the prior example, but greatly expand
 the posited effect sizes, to max out at 10, where the power would be
@@ -239,7 +239,11 @@ grid.arrange(s_plot, m_plot, ncol=2)
 
 ![Comparison of Type S/M error across effect sizes]({{ site.baseurl }}/assets/img/Intro_To_retrodesign_files/figure-html/unnamed-chunk-5-1.png)<!-- -->
 
-The probability of type S error decreases rapidly. To ensure that $s ≤ 0.1$
+As [Lu et al.](https://onlinelibrary.wiley.com/doi/full/10.1111/bmsp.12132)
+(2018) note, the type S and M error shrink at very different rates as power
+rises.
+
+They find the probability of type S error decreases rapidly. To ensure that $s ≤ 0.1$
 and $s ≤ 0.01$, we only need $power = 0.08$ and $power = 0.17$, respectively. Thus,
 unless your study is severely underpowered, you shouldn't
 need to worry about type s errors very often.
