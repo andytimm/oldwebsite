@@ -4,12 +4,10 @@ title: Type S/M errors in R with retrodesign()
 tags: [R, R studio, hypothesis testing]
 ---
 
-This is a online version of the vignette for my r package **retrodesign()**. It'll be on CRAN soon, but in the meantime,
-you can install with devtools using:
+This is a online version of the vignette for my r package **retrodesign()**. It can be installed with:
 
 ``` r
-library(devtools)
-install_github("andytimm/retrodesign")
+install.packages("retrodesign")
 ```
 
 In light of the replication and reproducibility crisis, researchers across
