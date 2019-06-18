@@ -9,7 +9,7 @@ theme_settings:
   avatar:
   favicon: assets/favicon.ico
   gravatar:
-  description: "Applied data science for political campaigns. Also includes some expository writing about statistical concepts." # used by search engines
+  description: "Recent Projects. Also includes some expository writing about statistical concepts." # used by search engines
 
   # Header and footer text
   header_text: >
