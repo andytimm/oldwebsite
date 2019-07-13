@@ -278,7 +278,7 @@ Type S and M errors are an artifact of the hard thresholding
 implicit in a NHST environment, where an arbitrary p-value (usually .05) decides
 what is and isn't noteworthy.
 
-If you have to work in the NHST because it's what your discipline publishes, you
+If you have to work in the NHST framework because it's what your discipline publishes, you
 can better understand some problems it might cause by exploring type S and M errors.
 If you're able to choose how you analyze your experiments though, you can avoid
 these errors (and many others) by abandoning statistical significance as a hard filter entirely.
