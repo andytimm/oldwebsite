@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Convention Prediction with a Bayesian Multilevel Multinomial Model
+title: Convention Prediction with a Bayesian Hierarchical Multinomial Model
 tags: [brms, Stan, conventions]
 ---
 
-Here, I use a bayesian multilevel multinomial model to predict the first ballot results at the  2018 DFL (Democratic) State Convention,  with data aggregated to the Party Unit level (ex: State Senate district) to guarantee anonymity. While using aggregated data obviously isn't ideal, this sort of strategy shows a lot of promise, especially if individual level predictors could be harnessed as another level of the multilevel model. As it stands, this is mostly a proof of concept for bayesian multilevel models in this context. To use something like this in practice, one could use prior predictive simulation to game out the convention under various assumptions, or condition on the first ballot data and use it to analyze trends in support and predict subsequent ballots as your floor team collects further data.
+Here, I use a bayesian hierarchical multinomial model to predict the first ballot results at the  2018 DFL (Democratic) State Convention,  with data aggregated to the Party Unit level (ex: State Senate district) to guarantee anonymity. While using aggregated data obviously isn't ideal, this sort of strategy shows a lot of promise, especially if individual level predictors could be harnessed as another level of the hierarchical model. As it stands, this is mostly a proof of concept for bayesian hierarchical models in this context. To use something like this in practice, one could use prior predictive simulation to game out the convention under various assumptions, or condition on the first ballot data and use it to analyze trends in support and predict subsequent ballots as your floor team collects further data.
 
 
  At this convention, I was
@@ -156,7 +156,7 @@ interesting coefficients, namely the ISAIAH and Unknown ones.
 
 # Nesting the Party Units in CD
 
-A next logical step for the model would be to incorporate the multilevel
+A next logical step for the model would be to incorporate the hierarchical
 structure present in the data- Party Units nested within Congressional
 Districts. Given that the CD’s reflect both the progressive/moderate and
 rural/urban divides that defined the election, expecting some
