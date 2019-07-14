@@ -4,3 +4,6 @@
 .sass-cache
 _site
 Gemfile.lock
+.Rproj.user
+.Rhistory
+type-theme.Rproj
