@@ -24,7 +24,7 @@ Andrew Gelman, John Carlin, Francis Tuerlinckx, and others which develop two new
 error. Together, these additional statistics more fully explain the dangers of
 working in the NHST framework, especially in noisy, small sample environments.
 
-**retrodesign()** is a package designed to help researchers better understand type S
+**retrodesign** is a package designed to help researchers better understand type S
 and M errors and their implications for their research. In this vignette, I
 introduce both the need for the type S/M error metrics, and the tools
 retrodesign provides for examining them. I assume only a basic familiarity with
