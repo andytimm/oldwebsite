@@ -20,7 +20,7 @@ Andrew Gelman, John Carlin, Francis Tuerlinckx, and others which develop two new
  errors are insufficient to fully capture the risks of NHST analyses, in that
  such analysis focuses excessively on statistical significance. Instead,
  they argue for consideration of the probability you'll get the sign on your
- effect wrong, or **type S error**, and the factor by which your effect might be overestimated, or **type M**
+ effect wrong, or **type S error**, and the factor by which your effect size might be exaggerated, or **type M**
 error. Together, these additional statistics more fully explain the dangers of
 working in the NHST framework, especially in noisy, small sample environments.
 
