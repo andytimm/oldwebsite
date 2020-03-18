@@ -18,7 +18,7 @@ The latest and most comprehensive such fuzzy regression discontinuity paper is C
 
 States are required by the Help America Vote Act to make available to the public individual level data on every registered voter in their state, although states vary considerably in how much information about each voter they provide. For example, some states provide complete histories of which election a voter has participated in, whereas others provide only the most recent 8 elections. Similarly, some states provide birthdate, whereas others provide only age, or age buckets.
 
-Given that the analysis they propose requires precise voting histories and a specific birthdate, Coppock and Green gathered the full voter file in 2013 from the 17 states where all three of
+Given that the analysis they propose requires precise voting histories and a specific birthdate, Coppock and Green gathered the full voter file in 2013 from the 15 states where all three of
 
 1. a complete history of which elections the individual had voted in,
 2. information on that voter’s eligibility to vote (to rule out the otherwise ineligible such as felons), and
